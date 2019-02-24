@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<FactionDef>
+	<defName>PillarManColony</defName>
+	<label>Pillar Man Tribe</label>
+	<description>An indeginous tribe of neolithic super-humans that are allergic to the sun.</description>
+	<isPlayer>false</isPlayer>
+	<basicMemberKind>Pillar Man</basicMemberKind>
+	<pawnsPlural>pillar men</pawnsPlural>
+	<factionBaseNameMaker>NamerFactionTribal</factionBaseNameMaker>
+	<techLevel>Neolithic</techLevel>
+	<pawnNameMaker>NamerPersonTribal</pawnNameMaker>
+	<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+	<expandingIconTexture>World/redstone</expandingIconTexture>
+	<homeIconPath>World/redstone</homeIconPath>
+	<apparelStuffFilter>
+	<thingDefs>
+		<li>Cloth</li>
+	</thingDefs>
+	</apparelStuffFilter>
+</FactionDef>
+
+
+
+
+
+
+</Defs>

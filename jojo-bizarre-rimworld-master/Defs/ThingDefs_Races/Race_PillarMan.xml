@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+<AlienRace.RaceSettings>
+		<defName>PillarMan_Settings</defName>
+	
+		<pawnKindSettings>
+			
+			<alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>PillarManSlave</li>
+					</kindDefs>
+					<chance>10.0</chance>
+				</li>
+			</alienslavekinds>
+			
+			<alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>PillarManRefugee</li>
+					</kindDefs>
+					<chance>10.0</chance>
+				</li>
+		</alienrefugeekinds>
+		
+		<alienwandererkinds>
+        <li>
+            <pawnKindEntries>
+                <li>
+                    <kindDefs>
+                        <li>PillarManTribal</li>
+                    </kindDefs>
+                    <chance>10.0</chance>
+                </li>
+            </pawnKindEntries>
+            <factionDefs>
+                <li>PlayerColony</li> 
+            </factionDefs>
+        </li>
+    </alienwandererkinds>
+	<startingColonists>
+			<li>
+				<pawnKindEntries>
+					<li>
+						<kindDefs>
+							<li>PillarManColonist</li>
+						</kindDefs>
+						<chance>15.0</chance>
+					</li>
+				</pawnKindEntries>
+				<factionDefs>
+					<li>PlayerColony</li>
+				</factionDefs>
+			</li>
+			<li>
+				<pawnKindEntries>
+					<li>
+						<kindDefs>
+							<li>PillarManTribesperson</li>
+						</kindDefs>
+						<chance>15.0</chance>
+					</li>
+				</pawnKindEntries>
+				<factionDefs>
+					<li>PlayerTribe</li>
+				</factionDefs>
+			</li>
+		</startingColonists>
+			
+		</pawnKindSettings>
+</AlienRace.RaceSettings>
+	
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="JJBR_PillarMan">
+	<defName>JJBR_PillarMan</defName>
+	<label>Pillar Man</label>
+	<description>A native of a lost tribe of indigenous people that can perform talents like no other. There defining characteristic is the inability to prosper through out the day.</description>
+
+	<alienRace>
+	<hairSettings>
+		<hasHair>true</hasHair>
+    </hairSettings>
+	
+	<graphicPaths>
+		   
+    </graphicPaths>
+	<generalSettings>
+		 <humanRecipeImport>true</humanRecipeImport>
+		 <allowHumanBios>true</allowHumanBios>
+		 <immuneToAge>true</immuneToAge>
+		
+		 <forcedRaceTraitEntries>
+			 <li>
+				<defName>JJBR_PillarManTrait</defName>
+                <degree>2</degree>
+                <chance>100</chance>
+             </li>
+		 </forcedRaceTraitEntries>
+		 <disallowedTraits>
+               <li>JJBR_HamonWielder</li>
+			   <li>JJBR_Vampire</li>
+         </disallowedTraits>
+		 
+	<alienPartGenerator>
+				<alienbodytypes>
+					<li>Hulk</li>
+				</alienbodytypes>
+			<customDrawSize>(1.15, 1.15)</customDrawSize>
+			<customHeadDrawSize>(1.15, 1.15)</customHeadDrawSize>
+			<useGenderedHeads>true</useGenderedHeads>
+            <useGenderedBodies>false</useGenderedBodies>
+			
+    </alienPartGenerator>
+    </generalSettings>
+	</alienRace>
+	<statBases>
+		<MarketValue>5000</MarketValue>
+		<MoveSpeed>7.0</MoveSpeed>
+		<Flammability>0.3</Flammability>
+		<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+		<ComfyTemperatureMax>60</ComfyTemperatureMax>
+		<LeatherAmount>45</LeatherAmount>
+		<PsychicSensitivity>1.0</PsychicSensitivity>
+		<MiningSpeed>4.5</MiningSpeed>
+		<ImmunityGainSpeed>5.0</ImmunityGainSpeed>
+	</statBases>
+	
+	<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.07</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<nameCategory>HumanStandard</nameCategory>
+			<lifeExpectancy>1000000</lifeExpectancy>
+			<body>Human</body>
+			
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>2</baseHealthScale>
+			<foodType>OmnivoreHuman</foodType>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<litterSizeCurve>
+			<points>
+			  <li>(0.5, 0)</li>
+			  <li>(1, 1)</li>
+			  <li>(1.01, 0.02)</li>
+			  <li>(3.5, 0)</li>
+			</points>
+			</litterSizeCurve>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<lifeStageAges>
+        <li>
+          <def>HumanlikeBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>HumanlikeToddler</def>
+          <minAge>1.2</minAge>
+        </li>
+        <li>
+          <def>HumanlikeChild</def>
+          <minAge>4</minAge>
+        </li>
+        <li>
+          <def>HumanlikeTeenager</def>
+          <minAge>13</minAge>
+        </li>
+        <li>
+          <def>HumanlikeAdult</def>
+          <minAge>18</minAge>
+        </li>
+      </lifeStageAges>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+				<li>Human</li>
+			</hediffGiverSets>
+			<ageGenerationCurve>
+				<points>
+					<li>(0,0)</li>
+					<li>(4,10)</li>
+					<li>(50,30)</li>
+					<li>(100,30)</li>
+					<li>(250,40)</li>
+					<li>(500,60)</li>
+					<li>(1000,100)</li>
+					<li>(100000,0)</li>
+				</points>
+			</ageGenerationCurve>
+			
+		</race>
+</AlienRace.ThingDef_AlienRace>
+
+</Defs>

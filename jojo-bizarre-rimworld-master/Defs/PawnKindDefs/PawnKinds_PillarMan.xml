@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<PawnKindDef Abstract="True" Name="PillarManBase">
+	<race>JJBR_PillarMan</race>
+	<combatPower>50</combatPower>
+	<isFighter>true</isFighter>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<forceNormalGearQuality>true</forceNormalGearQuality>
+	<apparelTags>
+      <li>Neolithic</li>
+    </apparelTags>
+</PawnKindDef>
+
+ <PawnKindDef ParentName="PillarManBase">
+	<defName>PillarMan</defName>
+	<label>Pillar Man</label>
+	<race>JJBR_PillarMan</race>
+	<defaultFactionType>PillarManColony</defaultFactionType>
+	<backstoryCategories>
+		<li>Tribal</li>
+	</backstoryCategories>
+	<apparelMoney>
+		<min>500</min>
+		<max>1500</max>
+		</apparelMoney>
+ </PawnKindDef>
+
+</Defs>

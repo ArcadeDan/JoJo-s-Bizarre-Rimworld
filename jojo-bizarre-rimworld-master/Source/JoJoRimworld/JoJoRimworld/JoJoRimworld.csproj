@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8FDC5A6D-A95C-4B41-AEC4-44C4D927AADA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JoJoRimworld</RootNamespace>
+    <AssemblyName>Assembly</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0JecsTools">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\932008009\Assemblies\0JecsTools.dll</HintPath>
+    </Reference>
+    <Reference Include="AbilityUser">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\932008009\Assemblies\AbilityUser.dll</HintPath>
+    </Reference>
+    <Reference Include="AbilityUserAI">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\932008009\Assemblies\AbilityUserAI.dll</HintPath>
+    </Reference>
+    <Reference Include="AlienRace">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\839005762\Assemblies\AlienRace.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CompActivatableEffect">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\932008009\Assemblies\CompActivatableEffect.dll</HintPath>
+    </Reference>
+    <Reference Include="CompAnimated">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\932008009\Assemblies\CompAnimated.dll</HintPath>
+    </Reference>
+    <Reference Include="CompBalloon">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\932008009\Assemblies\CompBalloon.dll</HintPath>
+    </Reference>
+    <Reference Include="CompDeflector">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\932008009\Assemblies\CompDeflector.dll</HintPath>
+    </Reference>
+    <Reference Include="CompDelayedSpawner">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\932008009\Assemblies\CompDelayedSpawner.dll</HintPath>
+    </Reference>
+    <Reference Include="CompExtraSounds">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\932008009\Assemblies\CompExtraSounds.dll</HintPath>
+    </Reference>
+    <Reference Include="CompInstalledPart">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\932008009\Assemblies\CompInstalledPart.dll</HintPath>
+    </Reference>
+    <Reference Include="CompLumbering">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\932008009\Assemblies\CompLumbering.dll</HintPath>
+    </Reference>
+    <Reference Include="CompOverlays">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\932008009\Assemblies\CompOverlays.dll</HintPath>
+    </Reference>
+    <Reference Include="CompOversizedWeapon">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\932008009\Assemblies\CompOversizedWeapon.dll</HintPath>
+    </Reference>
+    <Reference Include="CompSlotLoadable">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\932008009\Assemblies\CompSlotLoadable.dll</HintPath>
+    </Reference>
+    <Reference Include="CompToggleDef">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\932008009\Assemblies\CompToggleDef.dll</HintPath>
+    </Reference>
+    <Reference Include="CompVehicle">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\932008009\Assemblies\CompVehicle.dll</HintPath>
+    </Reference>
+    <Reference Include="HugsLib">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\818773962\Assemblies\HugsLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PawnShields">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\932008009\Assemblies\PawnShields.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThinkNodes">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\932008009\Assemblies\ThinkNodes.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompHamonUser.cs" />
+    <Compile Include="HamonCardUtility.cs" />
+    <Compile Include="HamonData.cs" />
+    <Compile Include="HamonPower.cs" />
+    <Compile Include="HamonSkill.cs" />
+    <Compile Include="HamonUtility.cs" />
+    <Compile Include="ITab_Hamon.cs" />
+    <Compile Include="JJBRDefOf.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

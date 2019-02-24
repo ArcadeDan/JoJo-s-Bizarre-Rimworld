@@ -1,0 +1,6 @@
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\jojo-bizarre-rimworld-master\Assemblies\Assembly.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\jojo-bizarre-rimworld-master\Assemblies\Assembly.pdb
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\jojo-bizarre-rimworld-master\Source\JoJoRimworld\JoJoRimworld\obj\Debug\JoJoRimworld.csprojAssemblyReference.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\jojo-bizarre-rimworld-master\Source\JoJoRimworld\JoJoRimworld\obj\Debug\JoJoRimworld.csproj.CoreCompileInputs.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\jojo-bizarre-rimworld-master\Source\JoJoRimworld\JoJoRimworld\obj\Debug\Assembly.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\jojo-bizarre-rimworld-master\Source\JoJoRimworld\JoJoRimworld\obj\Debug\Assembly.pdb

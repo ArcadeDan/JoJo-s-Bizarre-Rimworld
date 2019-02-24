@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TraitDef>
+		<defName>JJBR_HamonWielder</defName>
+		<commonality>0.3</commonality>
+		
+		<degreeDatas>
+		  <li>
+			<label>Hamon Wielder</label>
+			<description>{PAWN_nameDef} has attained the ability to harness the sun's energy into a power.</description>
+		  </li>
+		</degreeDatas>
+		<conflictingTraits>
+		  <li>JJBR_Vampire</li>
+		  <li>JJBR_PillarManTrait</li>
+		</conflictingTraits>	
+	</TraitDef>
+	
+	<TraitDef>
+		<defName>JJBR_Vampire</defName>
+		<commonality>0.1</commonality>
+		<degreeDatas>
+		  <li>
+			<label>Vampire</label>
+			<description>through means that are unknown, {PAWN_nameDef} has rejected their humanity and has found higher power. </description>
+		  </li>
+		</degreeDatas>
+		<conflictingTraits>
+		  <li>JJBR_HamonWielder</li>
+		  <li>JJBR_PillarManTrait</li>
+		</conflictingTraits>
+	</TraitDef>
+	
+	<TraitDef>
+		<defName>JJBR_PillarManTrait</defName>
+		<commonality>0.1</commonality>
+		<degreeDatas>
+		  <li>
+			<label>Pillar Man</label>
+			<description>{PAWN_nameDef} is a member of a lost indigenous tribe that possess incredible talents.</description>
+		  </li>
+		</degreeDatas>
+		<conflictingTraits>
+		  <li>JJBR_HamonWielder</li>
+		  <li>JJBR_Vampire</li>
+		</conflictingTraits>
+		
+	</TraitDef>
+	
+</Defs>
