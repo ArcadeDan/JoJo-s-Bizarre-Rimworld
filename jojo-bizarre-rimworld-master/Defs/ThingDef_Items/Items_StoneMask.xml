@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="ResourceBase">
+	<defName>StoneMask</defName>
+	<label>Stone Mask</label>
+	<description>A strange decrepit mask. It looks as if it was used for sacrificial rituals.</description>
+	<graphicData>
+      <texPath>PillarMask</texPath>
+    </graphicData>
+
+
+
+</ThingDef>
+
+
+
+
+
+
+</Defs>

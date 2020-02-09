@@ -8,8 +8,44 @@
 	<isPlayer>false</isPlayer>
 	<basicMemberKind>Pillar Man</basicMemberKind>
 	<pawnsPlural>pillar men</pawnsPlural>
+	<leaderTitle>Prophet</leaderTitle>
+	<backstoryCategory>Tribal</backstoryCategory>
 	<factionBaseNameMaker>NamerFactionTribal</factionBaseNameMaker>
 	<techLevel>Neolithic</techLevel>
+	<factionBaseSelectionWeight>1</factionBaseSelectionWeight>
+	<canMakeRandomly>true</canMakeRandomly>
+	<requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<naturalColonyGoodwill>
+      <min>-60</min>
+      <max>0</max>
+	<visitorTraderKinds>
+      <li>Visitor_Neolithic_Standard</li>
+    </visitorTraderKinds>
+	<caravanTraderKinds>
+      <li>Caravan_Neolithic_BulkGoods</li>
+      <li>Caravan_Neolithic_WarMerchant</li>
+      <li>Caravan_Neolithic_Slaver</li>
+    </caravanTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Neolithic_Standard</li>
+    </baseTraderKinds>
+	<maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	<canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+	<hairTags>
+	  <li>Urban</li>
+      <li>Rural</li>
+      <li>Tribal</li>
+      <li>Punk</li>
+	</hairTags>
 	<pawnNameMaker>NamerPersonTribal</pawnNameMaker>
 	<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
 	<expandingIconTexture>World/redstone</expandingIconTexture>

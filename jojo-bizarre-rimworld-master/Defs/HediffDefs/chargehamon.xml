@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Def>
+
+	<HediffDef>
+	
+		<defName>HamonEnergy</defName>
+		<label>Hamon Energy</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<makesSickThought>false</makesSickThought>
+		<makesAlert>false</makesAlert>
+		<isBad>false</isBad>
+		<defaultLabelColor>(0.6,0,0.0)</defaultLabelColor>
+		<minSeverity>0.001</minSeverity>
+		<maxSeverity>200.0</maxSeverity>
+		<initialSeverity>.5</initialSeverity>
+	
+	</HediffDef>
+
+
+
+
+
+
+</Def>

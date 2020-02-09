@@ -110,6 +110,7 @@
     <Compile Include="HamonPower.cs" />
     <Compile Include="HamonSkill.cs" />
     <Compile Include="HamonUtility.cs" />
+    <Compile Include="HediffComp_HamonEnergy.cs" />
     <Compile Include="ITab_Hamon.cs" />
     <Compile Include="JJBRDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

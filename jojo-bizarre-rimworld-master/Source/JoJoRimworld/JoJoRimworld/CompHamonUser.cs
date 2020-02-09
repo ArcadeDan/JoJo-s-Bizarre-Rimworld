@@ -34,6 +34,23 @@ namespace JoJoRimworld
 
         }
 
+        public override void CompTick()
+        {
+            if (Pawn?.Spawned != true) return;
+            if (Find.TickManager.TicksGame > 200)
+            {
+                if (IsHamonUser)
+                {
+                    if (!firstTick)
+                    {
+                        PostInitializeTick();
+                    }
+                    base.CompTick();
+                }
+            }
+        }
+
+
         public void ResolveHamonTab()
         {
             if (!this.Pawn.story.traits.HasTrait(JJBRDefOf.JJBR_HamonWielder))
